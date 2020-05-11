@@ -184,7 +184,7 @@ h2.profession-title{
     margin-bottom: 30px;
 }
 p.intro-text {
-    /*display: none;*/
+    display: none;
     max-width: 980px;
 }
 p.intro-text .contact-me{
