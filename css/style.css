@@ -183,6 +183,9 @@ h2.profession-title{
 .resume.about-me{
     margin-bottom: 30px;
 }
+.resume.about-me .label-container{
+    display: none;
+}
 p.intro-text {
     display: none;
     max-width: 980px;
@@ -349,7 +352,7 @@ main section:first-of-type .header:before{
     border: 3px solid #4ce7e7;
     position: fixed;
     right: 30px;
-    top: 90vh;
+    top: 75vh;
     box-shadow: 0 0 20px 3px #0FF;
     z-index: -2;
     opacity: 0;
@@ -467,8 +470,9 @@ main section:first-of-type .header:before{
     p.mobile.intro-text{
         display: none;
     }
-    p.intro-text{
-        display: block;
+    p.intro-text,
+    .resume.about-me .label-container{
+        display: inline-block;
     }
     h3.resume-label{
         width: 200px;
@@ -573,5 +577,26 @@ main section:first-of-type .header:before{
         margin: 6px auto;
         background-color: #0ff;
         display: block;
+    }
+  }
+  .page-content .resume.about-me .resume-laptop.download-btn{
+        display: none;
+    }
+  @media only screen and (max-height: 900px) {
+    .sidebar h2.profession-title {
+        font-size: 1.1rem;
+        line-height: 1.3rem;
+    }
+    .sidebar .resume-desktop.download-btn{
+        display: none;
+    }
+    .page-content .resume.about-me .resume-laptop.download-btn{
+        display: inline-block;
+        margin-top: 15px;
+    }
+  }
+  @media only screen and (max-height: 900px) and (max-width: 1400px) {
+    .sidebar .resume-desktop.download-btn{
+        display: inline-block;
     }
   }
