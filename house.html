@@ -18,9 +18,38 @@
 </head>
 
 <body>
-	
-	<button onclick="leftBtn()" style="position: fixed;	width: 30px; height: 30px;" ><</button>
-	<button onclick="rightBtn()" style="position: fixed; width: 30px; height: 30px; right: 0px;">></button>
+	<p id="name" style="
+	position: fixed;
+	text-align: center;
+	width: 100%;
+	font-size: 25px;"></p>
+
+	<button id="leftBtnID" onclick="leftBtn()" style="
+	position: fixed;
+    width: 180px;
+    height: 640px;
+    background-color: #0000;
+    text-align: left;
+    color: white;
+    font-size: 25px;
+    outline: none;
+    padding-left: 10px;
+    border: 0;" ><</button>
+
+	<button id="rightBtnID" onclick="rightBtn()" style="
+	position: fixed;
+    width: 180px;
+    height: 640px;
+    right: 0px;
+    background-color: #0000;
+    text-align: right;
+    color: white;
+    font-size: 25px;
+    outline: none;
+    padding-right: 10px;
+    border: 0;">></button>
+
+   
 
 	<img id="doleLevo" src=""> 
 	<img id="doleDesno" src=""> 
@@ -88,11 +117,17 @@
 
 		function updateImages()
 		{
+			$("#name").text(fileNames[currentID]);
 			$("#doleLevo").attr("src","images/house/DoleLevo/" + fileNames[currentID]+".png");
 			$("#doleDesno").attr("src","images/house/DoleDesno/" + fileNames[currentID]+".png");
 			$("#goreDesno").attr("src","images/house/GoreDesno/" + fileNames[currentID]+".png");
 		}
 		updateImages();
+
+		$('#leftBtnID').css('width', $( window ).width()/2 + 'px');
+		$('#rightBtnID').css('width', $( window ).width()/2 + 'px');
+		$('#leftBtnID').css('height', $( window ).height() + 'px');
+		$('#rightBtnID').css('height', $( window ).height() + 'px');
 	</script>
 </body>
 
