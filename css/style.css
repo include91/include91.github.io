@@ -390,7 +390,8 @@ main section:first-of-type .header:before{
     .col-6,
     .col-5,
     .col-4,
-    .col-3{
+    .col-3,
+    .col-2{
         width: 100%;
         -ms-flex-preferred-size: unset;
         flex-basis: unset;
@@ -402,7 +403,8 @@ main section:first-of-type .header:before{
     .col-6,
     .col-5,
     .col-4,
-    .col-3{
+    .col-3,
+    .col-2{
         width: 50%;
     }
 }
@@ -429,7 +431,8 @@ main section:first-of-type .header:before{
 @media only screen and (min-width: 768px) {
     .col-6,
     .col-4,
-    .col-3{
+    .col-3,
+    .col-2{
         width: 33.3333%;
     }
 }
@@ -442,7 +445,8 @@ main section:first-of-type .header:before{
 }
 @media only screen and (min-width: 1200px) {
     .col-6,
-    .col-5{
+    .col-5,
+    .col-2{
         width: 20%;
     }
 }
