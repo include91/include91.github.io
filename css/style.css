@@ -558,7 +558,7 @@ main section:first-of-type .header:before{
         transition: height .3s;
     }
     header nav.open {
-        height: 450px;
+        height: 520px;
         border-bottom: 4px solid #0FF;
     }
     header nav.open ul{
