@@ -352,11 +352,11 @@ main section:first-of-type .header:before{
     border: 3px solid #4ce7e7;
     position: fixed;
     right: 30px;
-    top: 75vh;
+    top: 89vh;
     box-shadow: 0 0 20px 3px #0FF;
     z-index: -2;
     opacity: 0;
-    transition: opacity .3s cubic-bezier(0.6, -0.28, 0.735, 0.045), z-index 2s;
+    transition: opacity .3s cubic-bezier(0.6, -0.28, 0.735, 0.045), z-index 1s;
 }
 .to-top.on {
     cursor: pointer;
