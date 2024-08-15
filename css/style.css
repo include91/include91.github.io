@@ -97,7 +97,7 @@ main {
     background-color: var(--mainColor);
     color: var(--btnFontColor);
     font-weight: bold;
-    padding: 5px 10px;
+    padding: 6px 12px;
     text-decoration: none;
 
 }
@@ -156,7 +156,7 @@ h2.profession-title {
     text-align: center;
     padding: 5px;
     margin-bottom: 10px;
-    border: 2px solid var(--mainColor);
+    border-bottom: 2px solid var(--mainColor);
 }
 .sidebar h1{
     font-size: 2rem;
@@ -208,7 +208,11 @@ p.intro-text {
     display: none;
     max-width: 980px;
 }
-p.intro-text .contact-me{
+.get-in-touch {
+    display:flex;
+}
+
+p.get-in-touch .contact-me {
     background-color: transparent;
     color: var(--mainColor);
     font-weight: bold;
@@ -217,14 +221,16 @@ p.intro-text .contact-me{
     display: block;
     width: 120px;
     margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 15px;
     text-align: center;
     border: 2px solid var(--mainColor);
 }
-p.intro-text .contact-me:hover{
-    background-color: var(--mainColor);
-    color: #2a2a2a;
-    border: 2px solid var(--mainColor);
-}
+    p.get-in-touch .contact-me:hover {
+        background-color: var(--mainColor);
+        color: #2a2a2a;
+        border: 2px solid var(--mainColor);
+    }
 p.intro-text.mobile{
     display: block;
 }
@@ -238,7 +244,7 @@ h3.resume-label{
     text-align: center;
     font-size: 1rem;
     margin-bottom: 15px;
-    border: 2px solid var(--mainColor);
+    border-bottom: 2px solid var(--mainColor);
 }
 .resume .label-container {
     width: 100%;
@@ -563,6 +569,12 @@ main section:first-of-type .header:before{
         background-color: var(--headerColor);
         z-index: 2;
         height: 50px;
+    }
+    .sidebar, .home {
+        padding-bottom: 0px;
+    }
+    .home {
+        padding-top: 0px;
     }
     header nav {
         max-width: 768px;
