@@ -7,6 +7,15 @@
 :root {
     /*--mainColor: #0FF;*/
     --mainColor: #ff5268;
+    --headerColor: #000;
+    --headerFontColor: #2a2a2a;
+    --backgroundColor: #2a2a2a;
+    --sidebarColor: #2a2a2a;
+    --fontColor: #eee;
+    --btnColor: #ff5268;
+    --btnFontColor: #2a2a2a;
+    --resumeLabelBackgroundColor: #2a2a2a;
+    --resumeLabelFontColor: #eee;
 }
 
 
@@ -16,7 +25,7 @@ body {
     font-size: 16px;
     line-height: 1.7;
     color: #eee;
-    background-color: #2a2a2a;
+    background-color: var(--backgroundColor);
 }
 h1, h2, h3, h4, h5, h6{
     font-family: 'Roboto', sans-serif;
@@ -38,9 +47,10 @@ main {
     flex-wrap: wrap;
     padding-top: 80px;
 }
-.sidebar{
+.sidebar {
     width: 100%;
     padding: 10%;
+    background-color: var(--sidebarColor);
 }
 .page-content{
     width: 100%;
@@ -85,10 +95,11 @@ main {
 }
 .download-btn {
     background-color: var(--mainColor);
-    color: #2a2a2a;
+    color: var(--btnFontColor);
     font-weight: bold;
     padding: 5px 10px;
     text-decoration: none;
+
 }
 /*** Header & Navigation ***/
 header {
@@ -96,7 +107,7 @@ header {
     width: 100%;
     /* box-shadow: 0 2px 10px 4px var(--mainColor); */
     border-bottom: 3px solid var(--mainColor);
-    background-color: #2a2a2a;
+    background-color: var(--headerColor);
     z-index: 2;
 }
 header nav{
@@ -140,11 +151,12 @@ header nav ul li a{
     }
 h2.profession-title {
     font-size: 1.3rem;
-    background-color: var(--mainColor);
-    color: #2a2a2a;
+    background-color: var(--resumeLabelBackgroundColor);
+    color: var(--resumeLabelFontColor);
     text-align: center;
     padding: 5px;
     margin-bottom: 10px;
+    border: 2px solid var(--mainColor);
 }
 .sidebar h1{
     font-size: 2rem;
@@ -217,8 +229,8 @@ p.intro-text.mobile{
     display: block;
 }
 h3.resume-label{
-    background-color: var(--mainColor);
-    color: #2a2a2a;
+    background-color: var(--resumeLabelBackgroundColor);
+    color: var(--resumeLabelFontColor);
     text-transform: uppercase;
     font-weight: 700;
     padding: 5px 10px;
@@ -355,7 +367,7 @@ main section:first-of-type .header:before{
     width: 40px;
     height: 40px;
     background-color: #2f2f2f;
-    border: 3px solid #4ce7e7;
+    border: 3px solid var(--mainColor);
     position: fixed;
     right: 30px;
     top: 89vh;
@@ -548,7 +560,7 @@ main section:first-of-type .header:before{
         width: 100%;
         /* box-shadow: 0 2px 10px 4px var(--mainColor); */
         border-bottom: 3px solid var(--mainColor);
-        background-color: #2a2a2a;
+        background-color: var(--headerColor);
         z-index: 2;
         height: 50px;
     }
@@ -559,7 +571,7 @@ main section:first-of-type .header:before{
         text-align: center;
         height: 0px;
         overflow: hidden;
-        background-color: #2a2a2a;
+        background-color: var(--headerColor);
         border-bottom: 0px solid var(--mainColor);
         transition: height .3s;
     }
